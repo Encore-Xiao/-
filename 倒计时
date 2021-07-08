@@ -1,0 +1,14 @@
+let validTime = 1800;
+let timer = setInterval(function(){
+    let minutes = Math.floor(validTime / 60);
+    let seconds = Math.floor(validTime % 60);
+    if(minutes>=0 && minutes <=9){
+          minutes = "0"+minutes;
+    }
+    if(seconds>=0 && seconds <=9){
+          seconds = "0"+seconds;
+    }
+    let min = minutes;
+    let sec = seconds;
+    --validTime;
+})
